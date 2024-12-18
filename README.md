@@ -263,3 +263,45 @@
 
 
 https://www.figma.com/design/OOlwQBqirjr3uctEqumcQJ/Exatek-(Copy)-(Copy)?node-id=78-19&t=EqdedzVlr3hF0Uow-1
+
+
+
+function awm_enqueue_assets() {
+	// Main CSS File
+	// wp_enqueue_style(
+	// 	'awm-main-style', // Unique handle name
+	// 	get_template_directory_uri() . '/assets/css/main.css', // Path to main.css
+	// 	array() // Dependencies (optional)
+	// );
+
+	wp_enqueue_style( 'awm-style', get_template_directory_uri() . '/assets/css/library/bootstrap.min.css', array(), 'all' );
+
+	wp_enqueue_style(
+		'font-awesome', // Unique handle name for Font Awesome
+		'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css', // CDN URL
+		array(), // Dependencies
+		'6.7.2' // Version
+	);
+    
+	// Splide CSS File
+	wp_enqueue_style(
+		'awm-splide-style', // Unique handle name for Splide CSS
+		get_template_directory_uri() . '/assets/css/library/splide-bundle.min.css', // Path to Splide CSS
+		array() // Dependencies (optional)
+	);
+
+	// Splide JS File
+	wp_enqueue_script(
+		'awm-splide-script',
+		get_template_directory_uri() . '/assets/js/splide-bundle.min.js',
+		array( 'jquery' ), // Dependencies
+	);
+
+	// Custom Script JS File
+	wp_enqueue_script(
+		'awm-custom-script', // Unique handle name for custom script
+		get_template_directory_uri() . '/assets/js/script.js', // Path to script.js
+		array( 'jquery' ), // Dependencies
+	);
+}
+add_action( 'wp_enqueue_scripts', 'awm_enqueue_assets' );
