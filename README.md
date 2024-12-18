@@ -305,3 +305,70 @@ function awm_enqueue_assets() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'awm_enqueue_assets' );
+
+
+
+
+
+contect 
+
+
+<div class="form-row">
+    <span class="icon"><i class="fa-solid fa-user"></i></span>
+    [text* your-firstname placeholder "First Name"]
+</div>
+
+<div class="form-row">
+    <span class="icon"><i class="fa-solid fa-user"></i></span>
+    [text* your-lastname placeholder "Last Name"]
+</div>
+
+<div class="form-row">
+    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+    [email* your-email placeholder "Email Address"]
+</div>
+
+<div class="form-row">
+    <span class="icon"><i class="fa-solid fa-phone"></i></span>
+    [tel* your-phone placeholder "Phone Number"]
+</div>
+
+<div class="form-row">
+    <span class="icon"><i class="fa-solid fa-comment"></i></span>
+    [textarea your-message placeholder "How Can We Help You?"]
+</div>
+
+<div class="form-submit">
+    [submit "Submit"]
+</div>
+
+
+<div class="form-row">
+    <span class="icon"><i class="fa-solid fa-user"></i></span>
+    [text* your-firstname placeholder "First Name"]
+</div>
+
+<div class="form-row">
+    <span class="icon"><i class="fa-solid fa-user"></i></span>
+    [text* your-lastname placeholder "Last Name"]
+</div>
+
+<div class="form-row">
+    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+    [email* your-email placeholder "Email Address"]
+</div>
+
+<div class="form-row">
+    <span class="icon"><i class="fa-solid fa-phone"></i></span>
+    [tel* your-phone placeholder "Phone Number"]
+</div>
+
+<div class="form-row">
+    <span class="icon"><i class="fa-solid fa-comment"></i></span>
+    [textarea your-message placeholder "How Can We Help You?"]
+</div>
+
+<div class="form-submit">
+    [submit "Submit"]
+</div>
+
